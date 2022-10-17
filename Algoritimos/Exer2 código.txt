@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int tam = 3;
+    int vetor1[tam] = {2,2,2};
+    int vetor2[tam] = {5,5,5};
+    int vetorResult;
+    int i;
+
+    for(i = 0; i < 3; i++)
+    {
+     vetorResult = vetor1[i] + vetor2[i];
+    }
+
+    cout<<"A soma dos vetores e igual a: "<<vetorResult * tam;
+}
