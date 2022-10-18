@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+main()
+{
+int vetor1[3], vetor2[3], vetor3[6], i;
+
+cout<<"PRIMEIRO VETOR \n\n";
+
+for(i = 0; i < 3; i++)
+{
+    cout<<"Digite os valores do vetor: ";
+    cin>>vetor1[i];
+}
+
+cout<<"\n SEGUNDO VETOR \n\n";
+
+for(i = 0; i < 3; i++)
+{
+    cout<<"Digite os valores do vetor: ";
+    cin>>vetor2[i];
+}
+for(i = 0; i < 3; i++)
+{
+    vetor3[i] = vetor1[i] + 1;
+}
+for(i = 3; i < 6; i++)
+{
+    vetor3[i] = vetor2[i] + 1;
+}
+
+cout<<"\n                TERCEIRO VETOR            \n\n";
+
+for(i = 0; i < 6; i++)
+{
+    cout<<vetor3[i] <<"\t";
+}
+
+}
+
