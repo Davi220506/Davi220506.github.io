@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+ main()
+ {
+    int vetOriginal[5], vetInvert[5];
+    int i;
+    for(i = 0; i < 5; i++) {
+        cout<<"Digite um numero: ";
+        cin>>vetOriginal[i];
+    }
+    for(i = 0; i < 5; i++)
+    {
+        vetInvert[i] = vetOriginal[5-i-1];
+        cout<<vetInvert[i];
+    }
