@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+main()
+{
+    int valor, soma = 0;
+    int m[2][3];
+
+    for(int l = 0; l < 3; l++)
+    {
+        for(int c = 0; c < 2; c++)
+        {
+            cout<<"Insira os valores da matriz: ";
+            cin>> m[l][c];
+        }
+    }
+
+    for(int l = 0; l < 3; l++)
+    {
+        for(int c = 0; c < 2; c++)
+        {
+            soma = soma + m[l][c];
+        }
+    }
+
+    cout<<"Resultado da soma: "<<soma;
+}
