@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+main()
+{
+    int g[13], r[13], cont = 0;
+
+    for(int i = 0; i < 13; i ++)
+    {
+        g[i] = i;
+    }
+
+    for(int i = 0; i < 13; i++)
+    {
+        cout<<"Insira o resultado: ";
+        cin>>r[i];
+
+        if(r[i] == g[1])
+        {
+            cont++;
+        }
+    }
+
+    if(cont == 13)
+    {
+       cout<<"GANHADOR, PARABENS!";
+    }
+
+    else
+
+    cout<<"A quantidade que voce acertou foi: " <<cont;
+
+}
