@@ -1,0 +1,51 @@
+body {
+    background-color:rgb(75, 74, 74);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color:  rgb(224, 221, 221);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(164, 165, 165);
+    cursor: pointer;
+    transition: .7s;
+  }
+  
+  mark {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+  #resultados {
+    margin-top: 20px;
+    white-space: pre-wrap;
+  }
+  

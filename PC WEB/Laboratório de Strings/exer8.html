@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+    <style>
+        body{
+            background-color:rgb(75, 74, 74);
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: aliceblue;
+        }
+
+        h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button{
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color:  rgb(224, 221, 221);
+        }
+
+        button:hover{
+            background-color: rgb(164, 165, 165);
+            cursor: pointer;
+            transition: .7s;
+        }
+    </style>
+</head>
+<body>
+    <a href="lista.html"><button>Voltar</button></a><br>
+
+    <h3>Exercício 8</h3>
+
+    <p>Faça um programa que codifique uma frase usando a estratégia TENIS/POLAR, na qual as letras que apareçam em uma das palavras são intercambiadas -A letra T por P e vice-versa; a letra E por O e vice-versa; a letra N por L e vice-versa; a letra I por A e vice-versa; e a letra S por R e vice-versa; as demais letras devem ser mantidas no texto codificado.</p>
+    <label for="frase">Digite uma frase:</label>
+    <input type="text" id="frase">
+    <button id="codificarBtn">Codificar</button>
+    <label for="fraseCodificada">Frase Codificada:</label>
+    <input type="text" id="fraseCodificada" readonly>
+
+    <script>
+        const codificarBtn = document.getElementById("codificarBtn");
+        codificarBtn.addEventListener("click", () => {
+            const frase = document.getElementById("frase").value;
+            const fraseCodificada = codificarTENISPOLAR(frase);
+            document.getElementById("fraseCodificada").value = fraseCodificada;
+        });
+
+        function codificarTENISPOLAR(frase) {
+            let novaFrase = "";
+            for (let i = 0; i < frase.length; i++) {
+                let letra = frase[i];
+                switch (letra.toUpperCase()) {
+                    case "T":
+                        novaFrase += "P";
+                        break;
+                    case "E":
+                        novaFrase += "O";
+                        break;
+                    case "N":
+                        novaFrase += "L";
+                        break;
+                    case "I":
+                        novaFrase += "A";
+                        break;
+                    case "S":
+                        novaFrase += "R";
+                        break;
+                    case "P":
+                        novaFrase += "T";
+                        break;
+                    case "O":
+                        novaFrase += "E";
+                        break;
+                    case "L":
+                        novaFrase += "N";
+                        break;
+                    case "A":
+                        novaFrase += "I";
+                        break;
+                    case "R":
+                        novaFrase += "S";
+                        break;
+                    default:
+                        novaFrase += letra;
+                        break;
+                }
+            }
+            return novaFrase;
+        }
+    </script>
+</body>
+</html>
