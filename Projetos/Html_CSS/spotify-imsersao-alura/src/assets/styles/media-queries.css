@@ -1,0 +1,38 @@
+@media screen and (max-width: 1080px){
+    .sidebar {
+        width: 30%;
+    }
+
+    .header_search {
+        width: 50%;
+        height: 4vh;
+        align-items: center;
+    }
+
+    .header_search img {
+        margin-left: 15px;
+    }
+
+    .header_search input {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .header_login button {
+        padding: 30px;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+    .disclaimer_premium button{
+        margin-top: 2px;
+        padding: 10px 15px;
+    }
+
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
